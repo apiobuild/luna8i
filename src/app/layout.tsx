@@ -3,6 +3,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Comfortaa, Geist, Geist_Mono } from "next/font/google";
 
+import { siteUrl } from "@/lib/site";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -19,6 +21,7 @@ const comfortaa = Comfortaa({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Luna8i — Batch Inference, Without the Frontier Price Tag",
   description:
     "A managed batch inference platform for high-volume, latency-tolerant AI workloads. Right-sized OSS models, predictable cost, zero infrastructure overhead.",
