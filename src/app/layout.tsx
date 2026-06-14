@@ -1,5 +1,6 @@
 import "./globals.css";
 
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Comfortaa, Geist, Geist_Mono } from "next/font/google";
 
@@ -38,6 +39,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${comfortaa.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
+      <GoogleAnalytics gaId="G-M5XGN8PJHZ" />
     </html>
   );
 }
