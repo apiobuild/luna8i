@@ -22,9 +22,9 @@ const comfortaa = Comfortaa({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Luna8i — Batch Inference, Without the Frontier Price Tag",
+  title: "luna8i — Scale Intelligence, Not the Cost",
   description:
-    "A managed batch inference platform for high-volume, latency-tolerant AI workloads. Right-sized OSS models, predictable cost, zero infrastructure overhead.",
+    "Run LLM inference at scale with open-weight models. Frontier performance at a fraction of the cost.",
 };
 
 export default function RootLayout({
