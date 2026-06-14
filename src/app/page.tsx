@@ -14,6 +14,8 @@ import { useState } from "react";
 
 const contactEmail = "luluc@apiobuild.com";
 
+const basePath = process.env.NODE_ENV === "production" ? "/luna8i" : "";
+
 const hero = {
   eyebrow: "Scalable LLM Inference Platform",
   titleLines: ["Scale intelligence,", "not the cost"],
@@ -83,7 +85,7 @@ const about = {
     "The result? Product teams are unable to iterate quickly from the spaghetti codebase, unpredictable capacity, model performance and costs and unstable infrastructure.",
     "I'm building luna8i so that you can focus on the business problem and we handle the rest."
   ],
-  photo: "/profile.png",
+  photo: `${basePath}/profile.png`,
   bio:
     "15+ years building large-scale distributed systems for data and AI/ML workloads at Reddit, Block (fka. Square), Capital One, and Deloitte. Most recently scaling LLM inference at Reddit, serving 200k+ predictions/sec and 100MM multi-modal assets.",
   linkedin: "https://www.linkedin.com/in/luluchengengineeratheart/",
@@ -112,7 +114,7 @@ function Header() {
     <header className="sticky top-0 z-50 border-b border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-black/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-2 text-xl font-bold tracking-tight [font-family:var(--font-comfortaa)]">
-          <Image src="/icon.svg" alt="" width={24} height={24} className="h-6 w-6" />
+          <Image src={`${basePath}/icon.svg`} alt="" width={24} height={24} className="h-6 w-6" />
           <span className="hidden sm:inline">luna8i</span>
         </a>
         <nav className="hidden sm:flex items-center gap-6">
@@ -356,7 +358,7 @@ export default function Home() {
       <About />
       <Cta />
       <footer className="px-6 py-8 flex items-center justify-center gap-2 text-sm text-zinc-500 dark:text-zinc-500">
-        <Image src="/icon.svg" alt="" width={16} height={16} className="h-4 w-4" />
+        <Image src={`${basePath}/icon.svg`} alt="" width={16} height={16} className="h-4 w-4" />
         © {new Date().getFullYear()} <span className="[font-family:var(--font-comfortaa)]">luna8i</span>
       </footer>
     </div>
