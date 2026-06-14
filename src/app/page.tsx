@@ -53,7 +53,7 @@ const features: { title: string; description: string; icon: LucideIcon }[] = [
   {
     title: "See the model performance yourself",
     description:
-      "Automated benchmarking of open-weight models against frontier models on your actual workload -- o you have the confidence to switch",
+      "Automated benchmarking of open-weight models against frontier models on your actual workload so you have the confidence to switch.",
     icon: BarChart3,
   },
 ];
