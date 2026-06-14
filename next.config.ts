@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
-const basePath = isProd ? "/luna8i" : "";
+import { basePath } from "./src/lib/site";
 
 const nextConfig: NextConfig = {
   output: "export",

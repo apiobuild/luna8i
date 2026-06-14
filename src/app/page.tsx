@@ -12,9 +12,9 @@ import {
 import Image from "next/image";
 import { useState } from "react";
 
-const contactEmail = "luluc@apiobuild.com";
+import { basePath } from "@/lib/site";
 
-const basePath = process.env.NODE_ENV === "production" ? "/luna8i" : "";
+const contactEmail = "luluc@apiobuild.com";
 
 const hero = {
   eyebrow: "Scalable LLM Inference Platform",
