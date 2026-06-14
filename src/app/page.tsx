@@ -87,10 +87,11 @@ const about = {
   ],
   photo: `${basePath}/profile.png`,
   bio:
-    "15+ years building large-scale distributed systems for data and AI/ML workloads at Reddit, Block (fka. Square), Capital One, and Deloitte. Most recently scaling LLM inference at Reddit, serving 200k+ predictions/sec and 100MM multi-modal assets.",
+    "15+ years building large-scale distributed systems for data and AI/ML workloads at Reddit, Block (fka. Square), Capital One, and Deloitte.",
   linkedin: "https://www.linkedin.com/in/luluchengengineeratheart/",
   website: "https://l1990790120.github.io",
   name: "Lulu Cheng",
+  title: "Founder",
 };
 
 const cta = {
@@ -102,9 +103,10 @@ const cta = {
 };
 
 const navLinks = [
-  { label: "Workloads", href: "#workloads" },
+  { label: "Problem", href: "#workloads" },
+  { label: "Solutions", href: "#solution" },
   { label: "About", href: "#about" },
-  { label: "Build with Us", href: "#build" },
+  { label: "Work with us?", href: "#build" },
 ];
 
 function Header() {
@@ -210,7 +212,7 @@ function Hero() {
 
 function Features() {
   return (
-    <section className="px-6 py-20 max-w-5xl mx-auto">
+    <section id="solution" className="px-6 py-20 max-w-5xl mx-auto">
       <h2 className="text-2xl sm:text-3xl font-semibold text-center">
         Solutions
       </h2>
@@ -261,7 +263,7 @@ function About() {
       <h2 className="text-2xl sm:text-3xl font-semibold text-center">
         About
       </h2>
-      <div className="mt-10 grid sm:grid-cols-2 gap-10">
+      <div className="mt-10 grid sm:grid-cols-2 gap-16">
         <div>
           <p className="font-semibold">{about.companyTitle}</p>
           <div className="mt-1 space-y-4 text-zinc-600 dark:text-zinc-400">
@@ -270,7 +272,7 @@ function About() {
             ))}
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row items-start gap-6">
+        <div className="flex flex-col items-center gap-6">
           <div className="flex flex-col items-center gap-3 shrink-0">
             <Image
               src={about.photo}
@@ -307,8 +309,9 @@ function About() {
               </a>
             </div>
           </div>
-          <div className="text-center sm:text-left">
+          <div className="text-center w-[70%]">
             <p className="font-semibold">{about.name}</p>
+            <p className="text-sm text-zinc-500 dark:text-zinc-400">{about.title}</p>
             <p className="mt-1 text-zinc-600 dark:text-zinc-400">
               {about.bio}
             </p>
