@@ -3,11 +3,11 @@
 import {
   BarChart3,
   Globe,
+  type LucideIcon,
   Route,
   Server,
   Shield,
   Zap,
-  type LucideIcon,
 } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
