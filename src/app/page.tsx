@@ -111,8 +111,9 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-black/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#" className="text-xl font-bold tracking-tight [font-family:var(--font-comfortaa)]">
-          luna8i
+        <a href="#" className="flex items-center gap-2 text-xl font-bold tracking-tight [font-family:var(--font-comfortaa)]">
+          <Image src="/icon.svg" alt="" width={24} height={24} className="h-6 w-6" />
+          <span className="hidden sm:inline">luna8i</span>
         </a>
         <nav className="hidden sm:flex items-center gap-6">
           {navLinks.map((link) => (
@@ -354,7 +355,8 @@ export default function Home() {
       <Features />
       <About />
       <Cta />
-      <footer className="px-6 py-8 text-center text-sm text-zinc-500 dark:text-zinc-500">
+      <footer className="px-6 py-8 flex items-center justify-center gap-2 text-sm text-zinc-500 dark:text-zinc-500">
+        <Image src="/icon.svg" alt="" width={16} height={16} className="h-4 w-4" />
         © {new Date().getFullYear()} <span className="[font-family:var(--font-comfortaa)]">luna8i</span>
       </footer>
     </div>
