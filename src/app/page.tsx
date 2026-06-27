@@ -361,8 +361,7 @@ export default function Home() {
       <About />
       <Cta />
       <footer className="px-6 py-8 flex items-center justify-center gap-2 text-sm text-zinc-500 dark:text-zinc-500">
-        <Image src={`${basePath}/icon.svg`} alt="" width={16} height={16} className="h-4 w-4" />
-        © {new Date().getFullYear()} <span className="[font-family:var(--font-comfortaa)]">luna8i</span>
+        © {new Date().getFullYear()} <Image src={`${basePath}/icon.svg`} alt="" width={16} height={16} className="h-4 w-4 -translate-y-0.5" /> <span className="[font-family:var(--font-comfortaa)]">luna8i</span>
       </footer>
     </div>
   );
